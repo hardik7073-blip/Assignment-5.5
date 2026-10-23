@@ -1,0 +1,91 @@
+:root {
+    --primary: #172554;
+    --secondary: #059669;
+    --background: #f1f5f9;
+    --text: #1e293b;
+    --white: #ffffff;
+    --spacing-small: 10px;
+    --spacing-medium: 20px;
+    --spacing-large: 40px;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+}
+h1, h2, h3 {
+    margin-bottom: var(--spacing-small);
+}
+p {
+    margin-bottom: var(--spacing-medium);
+}
+.site-header {
+    background-color: var(--primary);
+    color: var(--white);
+    text-align: center;
+    padding: var(--spacing-large) var(--spacing-medium);
+}
+.navbar {
+    background-color: var(--secondary);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--spacing-medium);
+    padding: var(--spacing-medium);
+}
+.navbar a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+}
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: var(--spacing-medium);
+}
+.hero {
+    text-align: center;
+    padding: var(--spacing-large) var(--spacing-medium);
+}
+.card {
+    background-color: var(--white);
+    padding: var(--spacing-medium);
+    margin-bottom: var(--spacing-large);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #00000015;
+}
+.btn {
+    display: inline-block;
+    background-color: var(--secondary);
+    color: var(--white);
+    padding: var(--spacing-small) var(--spacing-medium);
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--white);
+}
+th, td {
+    border: 1px solid #cbd5e1;
+    padding: var(--spacing-small);
+    text-align: left;
+}
+th {
+    background-color: var(--primary);
+    color: var(--white);
+}
+footer {
+    background-color: var(--primary);
+    color: var(--white);
+    text-align: center;
+    padding: var(--spacing-medium);
+}
